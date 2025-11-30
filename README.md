@@ -43,11 +43,15 @@ We used **Logistic Regression** as the main classification model.
 ---
 
 ## 📁 Project Files
-| File | Description |
+| File / Folder | Description |
 |---|---|
-| `dataset.csv` | Final labeled dataset |
-| `notebook.ipynb` | Preprocessing + Logistic Regression training + evaluation |
-| `pcap/` | Raw PCAP traffic used for dataset generation |
+| `dataset/pcap/` | Original raw network captures (`Attack_PC1.pcapng`, `Attack_PC2.pcapng`) |
+| `dataset/raw/` | Converted CSV files before preprocessing or merging |
+| `dataset/cleaned/` | Final processed + merged dataset (`merged_cleaned.csv`) |
+| `notebooks/feature_extraction.ipynb` | Feature extraction + CSV conversion from PCAP |
+| `notebooks/model_training.ipynb` | Preprocessing + Logistic Regression model training & evaluation |
+| `README.md` | Project documentation & usage instructions |
+
 
 ---
 
