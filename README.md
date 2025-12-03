@@ -57,6 +57,6 @@ The Random Forest model achieved strong performance on the labeled dataset.
 
 - Add more attack types (SSH brute force, DoS, SMB enumeration)  
 - Expand dataset size for higher generalization  
-- Try advanced ML models: **XGBoost**, **SVM**  
+- Try advanced ML models: **XGBoost**, **Neural Networks**  
 - Real-time IDS deployment with live packet sniffing  
 - Visualization dashboard integration
