@@ -50,9 +50,6 @@ The Random Forest model achieved strong performance on the labeled dataset.
 | Attack  | 0.97      | 0.99   | 0.98     |
 
 ### ✔ Confusion Matrix
-
-*(Replace `IMAGE_LINK_HERE` with the direct link to your confusion matrix image after uploading it to GitHub.)*
-
 ![Confusion Matrix](confusion_matrix.jpeg)
 ---
 
