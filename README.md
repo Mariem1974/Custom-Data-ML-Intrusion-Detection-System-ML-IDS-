@@ -53,7 +53,7 @@ The Random Forest model achieved strong performance on the labeled dataset.
 
 *(Replace `IMAGE_LINK_HERE` with the direct link to your confusion matrix image after uploading it to GitHub.)*
 
-![Confusion Matrix](https://raw.githubusercontent.com/Mariem1974/Custom-Data-ML-Intrusion-Detection-System-ML-IDS-/main/confusion_matrix.jpeg)
+![Confusion Matrix](confusion_matrix.jpeg)
 ---
 
 ## 📁 Project Structure
