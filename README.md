@@ -50,7 +50,7 @@ The Random Forest model achieved strong performance on the labeled dataset.
 | Attack  | 0.97      | 0.99   | 0.98     |
 
 ### ✔ Confusion Matrix
-![Confusion Matrix](https://github.com/Mariem1974/Custom-Data-ML-Intrusion-Detection-System-ML-IDS-/commit/8540b135ce84d38c55b6641b9996b28372af24be#diff-0e623bac0d1ce8f44f4d49fd03fe404976083c2df5b890adfacedc7c2b066aea)
+![Confusion Matrix](ConfusionMatrix.jpeg)
 ---
 
 ## 📁 Project Structure
