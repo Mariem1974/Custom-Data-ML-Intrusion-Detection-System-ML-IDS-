@@ -50,7 +50,7 @@ The Random Forest model achieved strong performance on the labeled dataset.
 | Attack  | 0.97      | 0.99   | 0.98     |
 
 ### ✔ Confusion Matrix
-![Confusion Matrix](confusion_matrix.jpeg)
+![Confusion Matrix]()
 ---
 
 ## 📁 Project Structure
