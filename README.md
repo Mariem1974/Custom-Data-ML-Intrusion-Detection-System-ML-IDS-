@@ -53,18 +53,6 @@ The Random Forest model achieved strong performance on the labeled dataset.
 ![Confusion Matrix](ConfusionMatrix.jpeg)
 ---
 
-## 📁 Project Structure
-
-| File / Folder | Description |
-|---------------|-------------|
-| `dataset/pcap/` | Raw PCAP files captured during experiments |
-| `dataset/raw/` | CSV files generated from PCAP before preprocessing |
-| `dataset/cleaned/` | Final cleaned + merged dataset (`merged_cleaned.csv`) |
-| `notebooks/model_training.ipynb` | Preprocessing + Random Forest training |
-| `README.md` | Project documentation |
-
----
-
 ## ⭐ Future Enhancements
 
 - Add more attack types (SSH brute force, DoS, SMB enumeration)  
