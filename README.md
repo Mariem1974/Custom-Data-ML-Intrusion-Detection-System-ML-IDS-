@@ -1,75 +1,61 @@
-# 🛡 ML-Based FTP Login Attack Detection (IDS Project)
+# 🛡 ML‑Based FTP Login Attack Detection (IDS Project)
 
-This project implements a Machine Learning–based Intrusion Detection System (IDS) designed to detect suspicious FTP login activity.  
-All traffic used to train the model was **self-captured and manually labeled**, including both normal sessions and brute-force login attempts.
+This project implements an **Intrusion Detection System (IDS)** that detects suspicious FTP login activity using **Machine Learning (ML)**.  
+All network traffic used to train the model was **self‑captured and labeled manually**, including both normal FTP sessions and unauthorized login attempts.
 
 ---
 
 ## 🔥 Project Goal
-
-Build a machine-learning model that accurately classifies FTP traffic as **normal** or **attack**, using real network traffic generated in a controlled lab environment.
+To build a machine‑learning detection model that classifies network activity as **normal** or **FTP attack**, using a dataset created from real traffic generated in our own lab environment.
 
 ---
 
 ## 📌 Main Steps
-
-- Setup of **Kali (attacker)** and **Metasploitable2 (victim)**
-- Capturing normal FTP activity + brute-force login attempts
-- Converting **PCAP files to CSV**
-- Manual labeling (`0 = normal`, `1 = attack`)
-- Feature extraction + preprocessing
-- Training and evaluating the ML model
-
----
-
-## 🧠 Machine Learning Model
-
-We used a **Random Forest Classifier**.
-
-### Why Random Forest?
-
-- Very high accuracy on tabular network data  
-- Robust against noise  
-- Handles non-linear relationships  
-- Reduces overfitting compared to single decision trees  
-- Provides feature importance for analysis  
+1. Set up **Kali (attacker)** and **Metasploitable2 (victim)**
+2. Captured **normal FTP traffic + login attack attempts**
+3. Converted PCAP files to CSV and labeled data (**0 = normal, 1 = attack**)
+4. Extracted and selected the most useful features for training
+5. Trained a Machine Learning model to identify suspicious login behavior
+6. Evaluated model performance using standard classification metrics
 
 ---
 
-## 📊 Model Performance
+## 🧠 Machine Learning Model Used
+We used **Logistic Regression** as the main classification model.
 
-The Random Forest model achieved strong performance on the labeled dataset.
+### Why Logistic Regression?
+- Lightweight and fast  
+- Works well with binary classification (normal vs attack)  
+- Easy to interpret and visualize  
+- Suitable for early‑stage IDS detection research  
 
-### ✔ Final Accuracy: **98.71%**
-
-### ✔ Classification Report
-
-| Class   | Precision | Recall | F1-Score |
-|---------|-----------|--------|----------|
-| Normal  | 0.99      | 0.99   | 0.99     |
-| Attack  | 0.97      | 0.99   | 0.98     |
-
-### ✔ Confusion Matrix
-![Confusion Matrix](ConfusionMatrix.jpeg)
 ---
 
-## 📁 Project Structure
+## 📊 Output & Results
+- Dataset contained **normal login events + attack attempts**
+- Logistic Regression successfully learned to detect abnormal activity
+- Evaluation metrics were calculated to measure performance:
 
+📌 *Add your values later:*  
+``Accuracy – Precision – Recall – F1 score``  
+*(Replace here with your actual numbers after training)*
+
+---
+
+## 📁 Project Files
 | File / Folder | Description |
-|---------------|-------------|
-| `dataset/pcap/` | Raw PCAP files captured during experiments |
-| `dataset/raw/` | CSV files generated from PCAP before preprocessing |
-| `dataset/cleaned/` | Final cleaned + merged dataset (`merged_cleaned.csv`) |
-| `notebooks/model_training.ipynb` | Preprocessing + Random Forest training |
-| `README.md` | Project documentation |
+|---|---|
+| `dataset/pcap/` | Original raw network captures (`Attack_PC1.pcapng`, `Attack_PC2.pcapng`) |
+| `dataset/raw/` | Converted CSV files before preprocessing or merging |
+| `dataset/cleaned/` | Final processed + merged dataset (`merged_cleaned.csv`) |
+| `notebooks/feature_extraction.ipynb` | Feature extraction + CSV conversion from PCAP |
+| `notebooks/model_training.ipynb` | Preprocessing + Logistic Regression model training & evaluation |
+| `README.md` | Project documentation & usage instructions |
+
 
 ---
 
-## ⭐ Future Enhancements
-
-- Add more attack types (SSH brute force, DoS, SMB enumeration)  
-- Expand dataset size for higher generalization  
-- Try advanced ML models: **XGBoost**, **SVM**  
-- Real-time IDS deployment with live packet sniffing  
-- Visualization dashboard integration  
-
+### ⭐ Future Improvements
+- Add more attack scenarios (SSH, DoS, SMB, etc.)
+- Expand dataset size for better generalization
+- Experiment with other ML models like Random Forest / SVM / Neural Networks
