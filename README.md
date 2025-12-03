@@ -60,7 +60,6 @@ The Random Forest model achieved strong performance on the labeled dataset.
 | `dataset/pcap/` | Raw PCAP files captured during experiments |
 | `dataset/raw/` | CSV files generated from PCAP before preprocessing |
 | `dataset/cleaned/` | Final cleaned + merged dataset (`merged_cleaned.csv`) |
-| `notebooks/feature_extraction.ipynb` | PCAP → CSV conversion + feature extraction |
 | `notebooks/model_training.ipynb` | Preprocessing + Random Forest training |
 | `README.md` | Project documentation |
 
@@ -70,7 +69,7 @@ The Random Forest model achieved strong performance on the labeled dataset.
 
 - Add more attack types (SSH brute force, DoS, SMB enumeration)  
 - Expand dataset size for higher generalization  
-- Try advanced ML models: **XGBoost**, **SVM**, **LightGBM**  
+- Try advanced ML models: **XGBoost**, **SVM**  
 - Real-time IDS deployment with live packet sniffing  
 - Visualization dashboard integration  
 
